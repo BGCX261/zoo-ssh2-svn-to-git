@@ -1,0 +1,33 @@
+
+/*分页样式*/
+.pagenum {
+	margin:10px;
+	height: 24px;
+	line-height: 20px;
+	text-align: center
+}
+
+.pagenum a,.pagenum a:link,.pagenum a:visited {
+	padding: 2px 4px 1px 4px;
+	border: 1px solid #ddd;
+	margin-right: 3px;
+	text-decoration: none;
+	color: #080;
+	font-size: 12px;
+}
+
+.pagenum a:hover,.pagenum a:active {
+	color: #fff;
+	text-decoration: none;
+	padding: 2px 4px 1px 4px;
+	border: 1px solid #080;
+	background: #080;
+}
+
+.pagenum span {
+	color: #fff;
+	text-decoration: none;
+	padding: 2px 4px 1px 4px;
+	border: 1px solid #080;
+	background: #080;
+}

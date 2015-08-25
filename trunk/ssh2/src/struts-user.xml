@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <package name="user" extends="struts-default">
+		<global-results>
+            <result name="success">/page/message.jsp</result>
+        </global-results>
+        <action name="user_*" class="userAction" method="{1}">
+            <result name="main">/page/main.jsp</result>
+            <result name="list">/page/user/UserList.jsp</result>
+            <result name="login">/page/user/login.jsp</result>
+        </action>  
+    </package>
+</struts>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <package name="product" extends="struts-default">
+		<global-results>
+            <result name="success">/page/message.jsp</result>
+        </global-results>
+        <action name="producttype_*" class="productTypeAction" method="{1}">
+            <result name="list">/page/producttype/ProductTypeList.jsp</result>
+            <result name="view">/page/producttype/ViewProductType.jsp</result>
+            <result name="add">/page/producttype/AddProductType.jsp</result>
+            <result name="editUI">/page/producttype/EditProductType.jsp</result>
+        </action>        
+        <action name="product_*" class="productAction" method="{1}">
+            <result name="list">/page/product/ProductList.jsp</result>
+            <result name="addUI">/page/product/AddProduct.jsp</result>
+            <result name="editUI">/page/product/EditProduct.jsp</result>
+            <result name="view">/page/product/ViewProduct.jsp</result>
+            <result name="selectTypeUI">/page/product/ProductTypeSelect.jsp</result>
+            <result name="queryProductUI">/page/product/QueryProductUI.jsp</result>
+        </action>
+    </package>
+</struts>
